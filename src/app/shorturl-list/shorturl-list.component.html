@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Admin Page</h2>
+    <br/>
+    <h4>All Short URLs</h4>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">URL</th>
+                <th scope="col">Short URL</th>
+                <th scope="col">Create Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of shorturlList">
+                <td>{{ item.id }}</td>
+                <td>{{ item.url }}</td>
+                <td>{{ item.shorturl }}</td>
+                <td>{{ item.createddate }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button (click)="refresh()" class="btn btn-primary">Refresh</button>
+</div>

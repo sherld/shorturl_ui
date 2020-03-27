@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>User Page</h2>
+    <br/>
+    <h4>Create a New Short URL</h4>
+    <form>
+        <div class="form-group">
+            <label for="url">Enter a long URL to make short:</label>
+            <input class="form-control" #newUrl>
+        </div>
+        <button (click)="submit(newUrl)" class="btn btn-primary">
+            Submit
+        </button>
+    </form>
+    <br/>
+    <p class="text-monospace">{{ message }}</p>
+    
+</div>
